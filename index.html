@@ -14597,7 +14597,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="AASD-4015---Advance-Mathematical-Concepts-for-Deep-Learning-Group-Project-2">AASD 4015 - Advance Mathematical Concepts for Deep Learning Group Project 2<a class="anchor-link" href="#AASD-4015---Advance-Mathematical-Concepts-for-Deep-Learning-Group-Project-2">&#182;</a></h1><h1 id="-COMPARING-DISTINCT-CNN-BACKBONE-ARCHITECTURES-WITH-DENSE-HEADS,-ATTENTION-AND-VISUAL-TRANSFORMERS-ON-MEDICAL-X-RAY-IMAGE-DATASET-"><b> COMPARING DISTINCT CNN BACKBONE ARCHITECTURES WITH DENSE HEADS, ATTENTION AND VISUAL TRANSFORMERS ON MEDICAL X-RAY IMAGE DATASET </b><a class="anchor-link" href="#-COMPARING-DISTINCT-CNN-BACKBONE-ARCHITECTURES-WITH-DENSE-HEADS,-ATTENTION-AND-VISUAL-TRANSFORMERS-ON-MEDICAL-X-RAY-IMAGE-DATASET-">&#182;</a></h1>
+<h1 id="-COMPARISON-OF-DISTINCT-CNN-BACKBONE-ARCHITECTURES-WITH-DENSE-HEADS,-ATTENTION-AND-VISUAL-TRANSFORMERS-ON-MEDICAL-X-RAY-IMAGE-DATASET-"><b> COMPARISON OF DISTINCT CNN BACKBONE ARCHITECTURES WITH DENSE HEADS, ATTENTION AND VISUAL TRANSFORMERS ON MEDICAL X-RAY IMAGE DATASET </b><a class="anchor-link" href="#-COMPARISON-OF-DISTINCT-CNN-BACKBONE-ARCHITECTURES-WITH-DENSE-HEADS,-ATTENTION-AND-VISUAL-TRANSFORMERS-ON-MEDICAL-X-RAY-IMAGE-DATASET-">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="AASD-4015---Advance-Mathematical-Concepts-for-Deep-Learning-Group-Project-2">AASD 4015 - Advance Mathematical Concepts for Deep Learning Group Project 2<a class="anchor-link" href="#AASD-4015---Advance-Mathematical-Concepts-for-Deep-Learning-Group-Project-2">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14677,7 +14688,10 @@ Additionally, since the <b> attention mechanism </b> has been quite successful r
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Given a set of images of chest X-Rays, classify whether the patients are infected with Covid or Normal.</p>
+<ol>
+<li>The objective is to develop a binary classification model capable of distinguishing between COVID-19 infected and non-infected individuals using a chest X-ray image of a patient.</li>
+<li>Compare the efficacy of different backbone architectures with dense heads, attention heads and visual transformers for this purpose.</li>
+</ol>
 
 </div>
 </div>
@@ -14741,7 +14755,7 @@ Additionally, since the <b> attention mechanism </b> has been quite successful r
 </tr>
 <tr>
   <td>4</td>
-  <td><b> Training baseline backbone architectures with simple head </b></td>
+  <td><b> Training Simple Dense Heads for Implementing Baseline Backbone Architectures </b></td>
   <td><a href="#backbone">Jump To Cell</a></td>
 </tr>
 <tr>
@@ -14761,7 +14775,7 @@ Additionally, since the <b> attention mechanism </b> has been quite successful r
 </tr>
 <tr>
   <td>5</td>
-  <td><b> VGG-16 backbone with Attention heads </b></td>
+  <td><b> Using Attention Mechanism </b></td>
   <td><a href="#att">Jump To Cell</a></td>
 </tr>
 <tr>
@@ -15407,6 +15421,18 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><font size=3>After briefly exploring the data, we found out that there is a vast difference between &quot;normal&quot; and &quot;pneumonia&quot; for the train data. Additionally, we found that there is more pneumonia record than normal. From the image above, we can see them for people with pneumonia. Their X-ray pictures are much blurry than normal people, and we believe that is because the lung infection causes some fluid there.</font></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="2.3-Handling-Class-Imbalance-by-Oversampling">2.3 Handling Class Imbalance by Oversampling<a class="anchor-link" href="#2.3-Handling-Class-Imbalance-by-Oversampling">&#182;</a></h3><p><a id='oversample'></a></p>
 
 </div>
@@ -15511,18 +15537,6 @@ class="
 </div>
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><font size=3>After briefly exploring the data, we found out that there is a vast difference between &quot;normal&quot; and &quot;pneumonia&quot; for the train data. Additionally, we found that there is more pneumonia record than normal. From the image above, we can see them for people with pneumonia. Their X-ray pictures are much blurry than normal people, and we believe that is because the lung infection causes some fluid there.</font></p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15649,7 +15663,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="-4.-Training-baseline-backbone-architectures-with-simple-head-"><b> 4. Training baseline backbone architectures with simple head </b><a class="anchor-link" href="#-4.-Training-baseline-backbone-architectures-with-simple-head-">&#182;</a></h2><p><a id='backbone'></a></p>
+<h2 id="-4.-Training-Simple-Dense-Heads-for-Implementing-Baseline-Backbone-Architectures-"><b> 4. Training Simple Dense Heads for Implementing Baseline Backbone Architectures </b><a class="anchor-link" href="#-4.-Training-Simple-Dense-Heads-for-Implementing-Baseline-Backbone-Architectures-">&#182;</a></h2><p><a id='backbone'></a></p>
 
 </div>
 </div>
@@ -15952,6 +15966,18 @@ weighted avg       0.51      0.51      0.46       780
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For VGG16, we got a test accuracy of 0.687 and a test loss of 2.847. The precision and recall values differ for each class, with the model performing better for the &quot;PNEUMONIA&quot; class than for the &quot;NORMAL&quot; class. The confusion matrix shows that the model has more false positives for the &quot;NORMAL&quot; class than false negatives for the &quot;PNEUMONIA&quot; class, indicating that the model may be biased towards classifying samples as &quot;PNEUMONIA.&quot;</p>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -16897,6 +16923,18 @@ weighted avg       0.52      0.51      0.47       780
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For InceptionV3, we got a test accuracy of 0.7218 and a test loss of 4.0357. In addition, the confusion matrix shows that the model has more false positives for the &quot;NORMAL&quot; class than false negatives for the &quot;PNEUMONIA&quot; class, indicating that the model may be biased towards classifying samples as &quot;PNEUMONIA.&quot;</p>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -18187,6 +18225,18 @@ weighted avg       0.75      0.50      0.33       780
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For EffientNetV2B3, we got a test accuracy of 0.5 and a test loss of 0.6932. The confusion matrix shows that the model is biased towards the &quot;NORMAL&quot; class and cannot properly differentiate the &quot;PNEUMONIA&quot; class. Especially the model did not identify any of the instances of &quot;PNEUMONIA&quot; correctly.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="-5.-VGG-16-backbone-with-Attention-heads-"><b> 5. VGG-16 backbone with Attention heads </b><a class="anchor-link" href="#-5.-VGG-16-backbone-with-Attention-heads-">&#182;</a></h2><p><a id='att'></a></p>
 
 </div>
@@ -18487,7 +18537,37 @@ weighted avg       0.50      0.50      0.48       780
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For VGG16 with Attention heads, we got a test accuracy of 0.7692 and a test loss of 0.5337. The confusion matrix shows that the model correctly predicted 120 instances of the &quot;NORMAL&quot; class and 270 instances of the &quot;PNEUMONIA&quot; class. However, it incorrectly predicted 270 instances of the &quot;NORMAL&quot; class and 120 instances of the &quot;PNEUMONIA&quot; class.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="5.2-MultiHead-Attention">5.2 MultiHead Attention<a class="anchor-link" href="#5.2-MultiHead-Attention">&#182;</a></h3><p><a id='multHead'></a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>MultiHeadSelfAttention</code> is a custom Keras layer that implements the multi-head self-attention mechanism by utilizing the previously written <code>SelfAttention</code> class. It consists of the following methods:</p>
+<p><code>init(self, num_heads, d_k)</code>: The constructor takes two arguments, <code>num_heads</code> and <code>d_k</code>. <code>num_heads</code> specifies the number of attention heads to use, and <code>d_k</code> specifies the dimensionality of each attention head. The method initializes the class by calling the base class constructor and storing the <code>num_heads</code> and <code>d_k</code> values.</p>
+<p><code>call(self, inputs)</code>: This method is called during the forward pass of the model when the layer processes the input data. It takes the input tensor and does the following:</p>
+<p>a. Applies the self-attention mechanism to the input tensor <code>num_heads</code> times using <code>SelfAttention</code> layers, each with dimensionality <code>d_k</code>.</p>
+<p>b. Concatenates the outputs from each of the <code>num_heads</code> self-attention layers along the last axis.</p>
+<p>c. Returns the concatenated tensor as the output of the layer.</p>
+<p>The <code>MultiHeadSelfAttention</code> layer outputs a tensor that can be fed to the next layer in the model.</p>
 
 </div>
 </div>
@@ -18734,7 +18814,33 @@ weighted avg       0.50      0.50      0.49       780
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For VGG16 with MultiHead Attention, we achieved a test accuracy of 0.8128 and a test loss of 0.6770. In addition, the confusion matrix shows that the model correctly predicted 260 instances of the &quot;PNEUMONIA&quot; class, which requires more attention due to its potential severity. However, the model incorrectly predicted 258 instances of the &quot;NORMAL&quot; class, indicating that there is still room for improvement in terms of specificity for this class.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="-6.-Visual-Transformers-(ViT)-"><b> 6. Visual Transformers (ViT) </b><a class="anchor-link" href="#-6.-Visual-Transformers-(ViT)-">&#182;</a></h2><p><a id='vit'></a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The code snippet defines a function <code>create_vit_classifier()</code> that creates a classification model using the Vision Transformer (ViT) architecture. The function returns a Keras model that takes an input tensor of shape <code>(img_height, img_width, 3)</code> and outputs a single scalar value between 0 and 1.</p>
+<p>The ViT model is created using the <code>vit_b32()</code> function from the vit module, which is a pre-trained ViT model with 32 attention layers. The function takes several arguments including the input image size, activation function, pre-trained weights, and number of classes.</p>
+<p>The function then defines an input layer and applies a rescaling layer to normalize the input pixel values between 0 and 1. The output of the ViT model is then computed by passing the rescaled input tensor to the model.</p>
 
 </div>
 </div>
@@ -18943,6 +19049,18 @@ weighted avg       0.75      0.50      0.33       780
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For Visual Transformers, we got a test accuracy of 0.5 and a test loss of 0.6932. The confusion matrix shows that the model predicted all instances as &quot;NORMAL&quot; and none as &quot;PNEUMONIA.&quot; From the classification, the precision is equal to 1, and the recall for &quot;PNEUMONIA&quot; is 0, which means the model cannot correctly identify any &quot;PNEUMONIA&quot; cases.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="-7.-Results-"><b> 7. Results </b><a class="anchor-link" href="#-7.-Results-">&#182;</a></h2><p><a id='results'></a></p>
 
 </div>
@@ -18955,15 +19073,16 @@ weighted avg       0.75      0.50      0.33       780
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Precision and Recall of Pneumonia class were used.</p>
 <table>
 <thead>
 <tr>
   <th>SNo.</th>
   <th>Training</th>
   <th>Parameters</th>
-  <th>Accuracy</th>
+  <th>Test Accuracy</th>
   <th>Precision</th>
-  <th><b> Recall </b></th>
+  <th>Recall</th>
   <th>F1 Score</th>
   <th>Comments</th>
 </tr>
@@ -18972,61 +19091,61 @@ weighted avg       0.75      0.50      0.33       780
 <tr>
   <td>1</td>
   <td>VGG-16 + Dense head</td>
-  <td>0</td>
-  <td></td>
-  <td>2</td>
-  <td><b> test </b></td>
-  <td></td>
-  <td>a</td>
+  <td>27,822,401</td>
+  <td>0.6872</td>
+  <td>0.5</td>
+  <td><b> 0.82 </b></td>
+  <td><b> 0.62 </b></td>
+  <td>Highest Recall, F1</td>
 </tr>
 <tr>
   <td>2</td>
   <td>Inception-V3 + Dense head</td>
-  <td></td>
-  <td>0</td>
-  <td>58m</td>
-  <td></td>
-  <td></td>
+  <td>55,357,729</td>
+  <td>0.7218</td>
+  <td>0.51</td>
+  <td>0.78</td>
+  <td>0.62</td>
   <td></td>
 </tr>
 <tr>
   <td>3</td>
   <td>EfficientNetV2B3 + Dense head</td>
-  <td></td>
-  <td>0</td>
-  <td>11m</td>
-  <td></td>
-  <td></td>
+  <td>52,252,735</td>
+  <td>0.5000</td>
+  <td>1.00</td>
+  <td>0.00</td>
+  <td>0.00</td>
   <td></td>
 </tr>
 <tr>
   <td>4</td>
   <td>VGG-16 + SelfAttention Head</td>
-  <td></td>
-  <td>0</td>
-  <td>11m</td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>14,813,057</td>
+  <td>0.7692</td>
+  <td>0.50</td>
+  <td>0.69</td>
+  <td>0.58</td>
+  <td>Smallest model</td>
 </tr>
 <tr>
   <td>5</td>
   <td>VGG-16 + MultiHead Attention</td>
-  <td></td>
-  <td>0</td>
-  <td>11m</td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>34,375,617</td>
+  <td><b> 0.8128 </b></td>
+  <td>0.50</td>
+  <td>0.67</td>
+  <td>0.57</td>
+  <td>Highest Test Accuracy</td>
 </tr>
 <tr>
   <td>6</td>
   <td>ViT</td>
-  <td>0</td>
-  <td>0</td>
-  <td>11</td>
-  <td></td>
-  <td></td>
+  <td>88,085,761</td>
+  <td>0.5000</td>
+  <td>1.00</td>
+  <td>0.00</td>
+  <td>0.00</td>
   <td></td>
 </tr>
 </tbody>
@@ -19042,7 +19161,33 @@ weighted avg       0.75      0.50      0.33       780
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In the above experiment, it can be observed that the VGG-16 + Dense head for the given set of training parameters was most effective with the highest recall and f1 score. On the other hand, Multi-Head Attention on top of VGG-16 network provided better accuracies overall.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="-8.-Conclusions-"><b> 8. Conclusions </b><a class="anchor-link" href="#-8.-Conclusions-">&#182;</a></h2><p><a id='conclusion'></a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In this project, we explored different backbone architectures along with dense heads, attention heads, and visual transformers for the task of binary classification of chest X-ray images to detect COVID-19. Our goal was to find a model that could achieve a high recall value for the &quot;PNEUMONIA&quot; class, as the consequences of a false negative can be severe in the context of COVID-19 diagnosis.</p>
+<p>From our experiments, we observed that the VGG-16 with a Dense head provided the highest recall and F1 score, making it the most effective model for our purpose. Furthermore, the VGG-16 with Multi-Head Attention achieved the highest test accuracy among all the models. On the other hand, models based on EfficientNetV2B3 and ViT did not perform well on this specific task.</p>
+<p>It is important to note that the results may vary depending on the choice of training parameters, dataset, and the specific problem under consideration. In the future, we could explore other backbone architectures, attention mechanisms, or even ensemble methods to further improve the model's performance. Additionally, techniques such as data augmentation and fine-tuning of model parameters could be employed to enhance</p>
 
 </div>
 </div>
@@ -19067,7 +19212,20 @@ weighted avg       0.75      0.50      0.33       780
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ol>
-<li></li>
+<li><p>Gained experience in implementing custom models in Keras with custom architectures such as self-attention and multi-head attention mechanisms.</p>
+</li>
+<li><p>Explored various backbone architectures, including VGG-16, InceptionV3, EfficientNetV2B3, and Visual Transformers (ViT), for the medical image classification task.</p>
+</li>
+<li><p>Understood the importance of recall in the context of COVID-19 diagnosis from chest X-ray images and the potential consequences associated with false negatives.</p>
+</li>
+<li><p>Learned how to handle class imbalance in the dataset using oversampling techniques.</p>
+</li>
+<li><p>Developed skills in evaluating model performance using metrics such as accuracy, precision, recall, F1 score, confusion matrix, and classification reports.</p>
+</li>
+<li><p>Gained insights on the trade-offs between different models in terms of performance, model complexity, and size.</p>
+</li>
+<li><p>Understood the potential areas for improvement and future work, such as exploring other backbone architectures, ensemble methods, data augmentation, and fine-tuning of model parameters.</p>
+</li>
 </ol>
 
 </div>
